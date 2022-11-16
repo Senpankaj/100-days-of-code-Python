@@ -1,11 +1,5 @@
-from email import message
+def greet(name, location):
+    print(f"Hello{name}")
+    print(f"Are you from{location}")
 
-
-command = print(input('Type \'encode\' to encrypt, type \'decode\' to decrypt:'))
-
-message = print(input('Type your message'))
-
-shifts = print(input('Type the shift number:'))
-
-if command == 'encode':
-    print([*message])
+greet(location ="Pankaj", name ="Udaipur")

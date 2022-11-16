@@ -1,16 +1,13 @@
-from email import message
-from secrets import choice
-import string
+command = (input('Type \'encode\' to encrypt, type \'decrypt\' to decode:'))
 
-print("CAESAR/'s CIPHER")
+alphabets = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 
-command = print(input("Type/'encode/' to encrypt, type/'decode/' to decrypt:"))
 
 if command == 'encode':
-    message = print(input('Type your message:'))
-    message_split = ([*message])
-    print(message_split)
-
-elif command == 'decrypt':
-    word = print(input('Type your message'))
-    
+    message = (input('Type your message'))
+    code1 = [ ch for ch in message]
+    print(code1)
+elif command == 'decode':
+    print('This could not be decoded')
+else:
+    print('This is all we had')
